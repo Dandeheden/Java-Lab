@@ -1,21 +1,22 @@
 class Leader 
 {
 public static void main(String args[])
-{ 
+  { 
 	int i,j;
-	int a[]={3,8,6,7,5};
-	for(i=0;i<5;i++)
+	int a[]={-2,1,-3,4,-1,2,1,-5,4};
+	for(i=0;i<8;i++)
 	{
-		for(j=i+1;j<5;j++)
-		{
-			if(a[i]>a[j])
-				System.out.println(a[i]+" is leader");
-			else
-				System.out.println(a[i]+" is nota leader");
-			break;
-		}
+		int max=a[i];
+		 for(j=i+1;j<9;j++)
+		  {
+			if(a[j]>max)
+			max=a[j];
+			
+		   }
+		if(a[i]==max)
+		  System.out.println(max+" is a leader");
 	}
-}
+   }
 }
 
 				
